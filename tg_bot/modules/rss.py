@@ -23,9 +23,7 @@ def show_url(bot, update, args):
                 re.sub('<[^<]+?>', '', link_processed.feed.get("description", default="Unknown")))
             feed_link = link_processed.feed.get("link", default="Unknown")
 
-            feed_message = "<b>Feed Title:</b> \n{}" \
-                           "\n\n<b>Feed Description:</b> \n{}" \
-                           "\n\n<b>Feed Link:</b> \n{}".format(html.escape(feed_title),
+            feed_message = "\n\n<b>Feed Link:</b> \n{}".format(html.escape(feed_title),
                                                                feed_description,
                                                                html.escape(feed_link))
 
