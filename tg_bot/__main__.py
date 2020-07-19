@@ -22,7 +22,7 @@ hoi {}, my name is {}! if you have any questions about how to use me please give
 
 iam a group manager bot maintained by  [this person](tg://user?id={}).
 
-A CinemaClub Group Management Bot. Join cinema club Whatsapp group for Strictly Movie Discussions.
+A  Group Management Bot..
 
 For more commands click /help...
 
