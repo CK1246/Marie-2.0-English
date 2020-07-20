@@ -34,10 +34,8 @@ def show_url(bot, update, args):
                 entry_link = link_processed.entries[0].get("link", default="Unknown")
 
                 entry_message = "\n\n<b>Title:</b> \n{}" \
-                                "\n\n<b>Entry Description:</b> \n{}" \
                                 "\n\n<b> Link:</b> \n{}".format(html.escape(entry_title),
-                                                                     entry_description,
-                                                                     html.escape(entry_link))
+                                                               html.escape(entry_link))
                 final_message = feed_message + entry_message
 
                 bot.send_message(chat_id=tg_chat_id, text=final_message, parse_mode=ParseMode.HTML)
